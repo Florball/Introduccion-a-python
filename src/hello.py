@@ -5,7 +5,7 @@ name = 'Flor'
 surname = 'Ballinas'
 value1 = 20
 value2 = 7
-birthday = '27/08'
+birthday = '27 de agosto'
 age = value1 + value2
 
 # Listas en Python
@@ -24,8 +24,8 @@ weekdays.popleft()
 print('hello world')
 print(name + ' ' + surname)
 # Dando formato a los strings
-print('Hola, me llamo {} {}'.format(name, surname)) # Por defecto
-print('tengo {1} años y mi cumpleaños es el {0}'.format(birthday, age)) # Utilizando marcadores de posicion
+print('Hola, me llamo {} {}'.format(name, surname)) # Orden por defecto (implícito)
+print('tengo {1} años y mi cumpleaños es el {0}'.format(birthday, age)) # Orden utilizando argumento posicional
 # Impriendo lista 
 print(weekdays)
 print(type(weekdays))
@@ -44,6 +44,15 @@ if 'monday' in weekdays :
 else :
   print('No se encontró monday en la lista')
 
-# If anidado
-positiveNumbers = [-4, -2, 0, 2, 4]
+# Método JOIN para concatenar
+friends = ['Mario', 'Carlos', 'Luis', 'Julio', 'Bryan']
+symbol = ', '
+newStr = symbol.join(friends)
+print(newStr)
 
+# Operadores aritméticos
+print('¡Ahora sumemos!')
+firstValue = int(input('Ingresa un valor: '))
+secondValue = int(input('Ingresa un segundo valor: '))
+result = firstValue + secondValue
+print('{} + {} = {}'.format(firstValue, secondValue, result))
